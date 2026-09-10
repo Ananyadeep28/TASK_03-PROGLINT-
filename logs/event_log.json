@@ -1,0 +1,88 @@
+{
+    "metadata": {
+        "source_video": "C:\\Users\\MOHAMMAD SAJID\\Downloads\\VID_20260910_154155778.mp4",
+        "output_video": "C:\\Users\\MOHAMMAD SAJID\\OneDrive\\Desktop\\PROGLINT TASK 3\\TASK_03-PROGLINT-\\output\\annotated_output.mp4",
+        "total_frames_processed": 1195,
+        "video_fps": 59.93,
+        "video_resolution": "1920x1080",
+        "processing_time_seconds": 95.51,
+        "processing_fps": 12.51
+    },
+    "parameters": {
+        "touch_threshold_px": 350.0,
+        "displacement_threshold_px": 150.0,
+        "return_tolerance_px": 100.0
+    },
+    "fsm_results": {
+        "initial_bag_position": [
+            852,
+            531
+        ],
+        "final_bag_position": [
+            817,
+            513
+        ],
+        "final_state": "PLACED (RETURNED)",
+        "total_transitions": 4,
+        "all_events": [
+            "Hand reached bag (Picking)",
+            "Bag lifted/moved from initial spot (Picked)",
+            "Bag returned to original area (Placing)",
+            "Hand released; bag placed back at rest (Placed)"
+        ]
+    },
+    "state_transitions": [
+        {
+            "frame": 172,
+            "timestamp_seconds": 2.87,
+            "from_state": "PLACED (INITIAL)",
+            "to_state": "PICKING",
+            "event_description": "Hand reached bag (Picking)",
+            "hand_distance_px": 322.76,
+            "bag_displacement_px": 25.81,
+            "bag_center": [
+                831,
+                516
+            ]
+        },
+        {
+            "frame": 278,
+            "timestamp_seconds": 4.639,
+            "from_state": "PICKING",
+            "to_state": "PICKED",
+            "event_description": "Bag lifted/moved from initial spot (Picked)",
+            "hand_distance_px": 299.28,
+            "bag_displacement_px": 155.54,
+            "bag_center": [
+                824,
+                378
+            ]
+        },
+        {
+            "frame": 878,
+            "timestamp_seconds": 14.652,
+            "from_state": "PICKED",
+            "to_state": "PLACING",
+            "event_description": "Bag returned to original area (Placing)",
+            "hand_distance_px": 303.61,
+            "bag_displacement_px": 41.11,
+            "bag_center": [
+                821,
+                504
+            ]
+        },
+        {
+            "frame": 896,
+            "timestamp_seconds": 14.952,
+            "from_state": "PLACING",
+            "to_state": "PLACED (RETURNED)",
+            "event_description": "Hand released; bag placed back at rest (Placed)",
+            "hand_distance_px": null,
+            "bag_displacement_px": 36.89,
+            "bag_center": [
+                821,
+                511
+            ]
+        }
+    ]
+}

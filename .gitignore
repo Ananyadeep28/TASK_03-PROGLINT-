@@ -32,6 +32,8 @@ data/samples/*.mp4
 
 # Generated outputs
 outputs/
+output/*.mp4
+output/*.jpg
 
 # Logs
 *.log
