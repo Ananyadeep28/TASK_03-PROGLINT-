@@ -22,10 +22,13 @@ data/raw/
 data/dataset/
 data/images/
 
+# Sample videos
+data/samples/*.mp4
+
 # Trained models
-models/*.pt
-models/*.pth
-models/*.onnx
+*.pt
+*.pth
+*.onnx
 
 # Generated outputs
 outputs/
