@@ -1,5 +1,4 @@
 class BagActionFSM:
-
     def __init__(
         self,
         touch_threshold=50,
